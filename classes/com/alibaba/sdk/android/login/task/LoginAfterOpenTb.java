@@ -1,0 +1,53 @@
+package com.alibaba.sdk.android.login.task;
+
+import android.app.Activity;
+import com.alibaba.sdk.android.ResultCode;
+import com.alibaba.sdk.android.login.callback.LoginCallback;
+import com.alibaba.sdk.android.login.impl.LoginComponent;
+import com.alibaba.sdk.android.login.impl.LoginContext;
+import com.alibaba.sdk.android.model.Result;
+import com.alibaba.sdk.android.session.CredentialService;
+import com.alibaba.sdk.android.session.model.LoginResultData;
+import com.alibaba.sdk.android.util.CommonUtils;
+
+public class LoginAfterOpenTb
+  extends AbsLoginByCodeTask
+{
+  private LoginCallback loginCallback;
+  
+  public LoginAfterOpenTb(Activity paramActivity, LoginCallback paramLoginCallback)
+  {
+    super(paramActivity);
+    this.loginCallback = paramLoginCallback;
+  }
+  
+  protected void doWhenException(Throwable paramThrowable)
+  {
+    CommonUtils.onFailure(this.loginCallback, ResultCode.create(10010, new Object[] { paramThrowable.getMessage() }));
+  }
+  
+  protected void doWhenResultFail(int paramInt, String paramString)
+  {
+    if (this.loginCallback != null) {
+      this.loginCallback.onFailure(paramInt, paramString);
+    }
+  }
+  
+  protected void doWhenResultOk()
+  {
+    if (this.loginCallback != null) {
+      this.loginCallback.onSuccess(LoginContext.credentialService.getSession());
+    }
+  }
+  
+  protected Result<LoginResultData> login(String[] paramArrayOfString)
+  {
+    return LoginComponent.INSTANCE.loginByCode(paramArrayOfString[0]);
+  }
+}
+
+
+/* Location:              E:\apk\xiaoenai2\classes-dex2jar.jar!\com\alibaba\sdk\android\login\task\LoginAfterOpenTb.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

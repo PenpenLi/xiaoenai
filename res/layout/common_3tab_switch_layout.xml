@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btnLayout" android:background="@color/transparent" android:paddingLeft="9.0dip" android:paddingTop="5.0dip" android:paddingRight="9.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_margin="0.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@color/common_tab_1_text_colors" android:gravity="center" android:id="@id/tabLeftBtn" android:background="@drawable/three_bar_bg_selector" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/store_chat_face" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:textColor="@color/common_tab_1_text_colors" android:gravity="center" android:id="@id/tabMidBtn" android:background="@drawable/three_bar_bg_selector" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/store_funny_card" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:textColor="@color/common_tab_1_text_colors" android:gravity="center" android:id="@id/tabRightBtn" android:background="@drawable/three_bar_bg_selector" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/store_mine" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#ffd5d5d4" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

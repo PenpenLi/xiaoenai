@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topbar">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/forum_heat_topic_list" android:background="?reply_bg" android:divider="@color/transparent" style="@style/forumPullToRefreshListView" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/container2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topbar">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/forum_essential_topic_list" android:background="?reply_bg" android:visibility="visible" android:divider="@color/transparent" style="@style/forumPullToRefreshListView" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/container3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topbar">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/forum_fresh_topic_list" android:background="?reply_bg" android:visibility="visible" android:divider="@color/transparent" style="@style/forumPullToRefreshListView" />
+    </FrameLayout>
+</RelativeLayout>

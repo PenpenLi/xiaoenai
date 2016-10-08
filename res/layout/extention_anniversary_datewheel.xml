@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:background="@drawable/date_picker_wheel_frames" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/timePicker1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.xiaoenai.app.widget.wheel.WheelView android:id="@id/year" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" />
+        <com.xiaoenai.app.widget.wheel.WheelView android:id="@id/month" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+        <com.xiaoenai.app.widget.wheel.WheelView android:id="@id/day" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+</RelativeLayout>

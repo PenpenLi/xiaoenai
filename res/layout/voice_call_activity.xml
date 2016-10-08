@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/voice_call_bg_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/voice_call_to_home_btn" android:background="@drawable/voice_call_minimize" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginTop="27.0dip" />
+        <TextView android:textSize="30.0sp" android:textColor="@color/white" android:id="@id/voice_call_lover_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="小恩爱" android:layout_centerInParent="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/voice_call_state_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="拨号中..." android:layout_below="@id/voice_call_lover_name" />
+        <ImageView android:id="@id/voice_call_lover_avater" android:layout_width="131.0dip" android:layout_height="131.0dip" android:layout_marginBottom="20.0dip" android:layout_above="@id/voice_call_lover_name" android:layout_centerHorizontal="true" />
+        <include layout="@layout/voice_callout_fragment" />
+        <include layout="@layout/voice_callin_fragment" />
+        <include layout="@layout/voice_call_connected_fragment" />
+        <include layout="@layout/voice_callin_click_acceptbtn_layout" />
+    </RelativeLayout>
+</FrameLayout>

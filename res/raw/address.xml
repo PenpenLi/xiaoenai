@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addressList>
+    <addressName value="baseURL">
+        <tips name="主站API地址"/>
+        <production name="线上环境" value="http://api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://api.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://apiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://http.enai.com/"/>
+        <develop name="开发环境" value="http://http.enai.com/"/>
+    </addressName>
+
+    <addressName value="appsURL">
+        <tips name="小应用，插件，独立频道地址"/>
+        <production name="线上环境" value="http://apps.api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://appsapi.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://apps.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://appsapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://apps.http.enai.com/"/>
+        <develop name="开发环境" value="http://apps.http.enai.com/"/>
+    </addressName>
+
+    <addressName value="socketURL">
+        <tips name="Socket 服务器"/>
+        <production name="线上环境" value="http://socket.api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="http://socket.api.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://con.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="http://con.qas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://socket0.enai.com/"/>
+        <develop name="开发环境" value="http://socket0.enai.com/"/>
+    </addressName>
+
+    <addressName value="socketURL2">
+        <tips name="备用的socket服务器"/>
+        <production name="线上环境" value="http://socket.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="http://socket.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://con.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="http://con.qas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://socket0.enai.com/"/>
+        <develop name="开发环境" value="http://socket0.enai.com/"/>
+    </addressName>
+
+    <addressName value="notificationURL">
+        <tips name="通知中心地址"/>
+        <production name="线上环境" value="http://noti.api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://notiapi.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://noti.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://notiapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://noti.enai.com/"/>
+        <develop name="开发环境" value="http://noti.enai.com/"/>
+    </addressName>
+
+    <addressName value="forumUrl">
+        <tips name="情侣说论坛URl"/>
+        <production name="线上环境" value="http://forum2.api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://forum2api.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://forum.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://forumapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://forum2.enai.com/"/>
+        <develop name="开发环境" value="http://forum2.enai.com/"/>
+    </addressName>
+
+    <addressName value="imageBaseURL">
+        <tips name="默认图片域名"/>
+        <production name="线上环境" value="http://a0.cdn.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="http://a0.cdn.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://xiaoenai-img.qiniudn.com/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="http://xiaoenai-img.qiniudn.com/"/>
+        <develop_test name="开发测试环境" value="http://xiaoenai-img.qiniudn.com/"/>
+        <develop name="开发环境" value="http://xiaoenai-img.qiniudn.com/"/>
+    </addressName>
+
+    <addressName value="voiceBaseURL">
+        <tips name="默认语音"/>
+        <production name="线上环境" value="http://a3.cdn.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="http://a3.cdn.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://xiaoenai-audio.qiniudn.com/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="http://xiaoenai-audio.qiniudn.com/"/>
+        <develop_test name="开发测试环境" value="http://xiaoenai-audio.qiniudn.com/"/>
+        <develop name="开发环境" value="http://xiaoenai-audio.qiniudn.com/"/>
+    </addressName>
+
+    <addressName value="authSdkUrl">
+        <tips name="授权SDK服务器"/>
+        <production name="线上环境" value="http://openapi.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://openapi.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://sdk.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://sdkapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://sdk.enai.com/"/>
+        <develop name="开发环境" value="http://sdk.enai.com/"/>
+    </addressName>
+
+    <addressName value="messageUrl">
+        <tips name="消息HTTP服务器"/>
+        <production name="线上环境" value="http://msg.api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://msgapi.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://msg.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://msgapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://msg.api.enai.com/"/>
+        <develop name="开发环境" value="http://msg.api.enai.com/"/>
+    </addressName>
+
+    <addressName value="verifyUrl">
+        <tips name="获取验证码接口"/>
+        <production name="线上环境" value="http://sms.api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://smsapi.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://sms.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://smsapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://sms.enai.com/"/>
+        <develop name="开发环境" value="http://sms.enai.com/"/>
+    </addressName>
+
+    <addressName value="forumImageURL">
+        <tips name="情侣说图片baseURL"/>
+        <production name="线上环境" value="http://a5.cdn.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="http://a5.cdn.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://a5.cdn.xiaoenai.com/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="http://a5.cdn.xiaoenai.com/"/>
+        <develop_test name="开发测试环境" value="http://a5.cdn.xiaoenai.com/"/>
+        <develop name="开发环境" value="http://a5.cdn.xiaoenai.com/"/>
+    </addressName>
+
+    <addressName value="mallImageUploadURL">
+        <tips name="商城上传"/>
+        <production name="线上环境" value="http://a6.cdn.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="http://a6.cdn.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://a6.cdn.xiaoenai.com/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="http://a6.cdn.xiaoenai.com/"/>
+        <develop_test name="开发测试环境" value="http://a6.cdn.xiaoenai.com/"/>
+        <develop name="开发环境" value="http://a6.cdn.xiaoenai.com/"/>
+    </addressName>
+
+    <addressName value="adsURL">
+        <tips name="广告"/>
+        <production name="线上环境" value="http://ads.api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://adsapi.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://ads.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://adsapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://ads.api.enai.com/"/>
+        <develop name="开发环境" value="http://ads.api.enai.com/"/>
+    </addressName>
+
+    <!--<production_https name="线上环境 https" value="https://confapi.xiaoenai.com/"/>-->
+    <addressName value="configURL">
+        <tips name="配置中心"/>
+        <production name="线上环境" value="http://conf.api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="http://conf.api.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://conf.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://confapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://conf.api.enai.com/"/>
+        <develop name="开发环境" value="http://conf.api.enai.com/"/>
+    </addressName>
+
+    <addressName value="forumShareURL">
+        <tips name="情侣说分享"/>
+        <production name="线上环境" value="http://shuo.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://shuo.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://forum.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://forumapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://forum2.enai.com/"/>
+        <develop name="开发环境" value="http://forum2.enai.com/"/>
+    </addressName>
+
+    <addressName value="streetURL">
+        <tips name="情侣街"/>
+        <production name="线上环境" value="http://gw01.api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://gw01api.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://gw.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="http://gwapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://street.enai.com/"/>
+        <develop name="开发环境" value="http://street.enai.com/"/>
+    </addressName>
+
+    <addressName value="streetImageUploadURL">
+        <tips name="情侣街图片上传"/>
+        <production name="线上环境" value="http://a6.cdn.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="http://a6.cdn.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://a6.cdn.xiaoenai.com/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="http://a6.cdn.xiaoenai.com/"/>
+        <develop_test name="开发测试环境" value="http://a6.cdn.xiaoenai.com/"/>
+        <develop name="开发环境" value="http://a6.cdn.xiaoenai.com/"/>
+    </addressName>
+
+    <addressName value="statURL">
+        <tips name="统计"/>
+        <production name="线上环境" value="http://gw01.api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://gw01api.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://gw.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://gwapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://http.enai.com/"/>
+        <develop name="开发环境" value="http://http.enai.com/"/>
+    </addressName>
+
+    <addressName value="gameURL">
+        <tips name="游戏地址"/>
+        <production name="线上环境" value="http://gw01.api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://gw01api.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://gw.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://gwapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://http.enai.com/"/>
+        <develop name="开发环境" value="http://http.enai.com/"/>
+    </addressName>
+
+    <addressName value="emchatAppkey">
+        <tips name="环信appkey"/>
+        <production name="线上环境" value="mzd2015#xiaoenai2015"/>
+        <production_https name="线上环境 https" value="mzd2015#xiaoenai2015"/>
+        <develop_test_qas name="外网测试环境" value="mzd2015#xiaoenai"/>
+        <develop_test_qas_https name="外网测试环境Https" value="mzd2015#xiaoenai"/>
+        <develop_test name="开发测试环境" value="mzd2015#xiaoenai"/>
+        <develop name="开发环境" value="mzd2015#xiaoenai"/>
+    </addressName>
+
+    <addressName value="streetGuideURL">
+        <tips name="情侣街导购"/>
+        <production name="线上环境" value="http://gw01.api.xiaoenai.com/"/>
+        <production_https name="线上环境 https" value="https://gw01api.xiaoenai.com/"/>
+        <develop_test_qas name="外网测试环境" value="http://gw.api.qas.xiaoenai.net/"/>
+        <develop_test_qas_https name="外网测试环境Https" value="https://gwapiqas.xiaoenai.net/"/>
+        <develop_test name="开发测试环境" value="http://http.enai.com/"/>
+        <develop name="开发环境" value="http://http.enai.com/penguin/"/>
+    </addressName>
+</addressList>

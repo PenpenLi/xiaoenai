@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/forum_link_content_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/forum_link_imageview" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/forum_vote_link_icon" android:scaleType="center" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="16.0sp" android:textColor="?forum_card_content_text_color" android:ellipsize="end" android:gravity="center|left" android:id="@id/forum_link_textview" android:background="@drawable/forum_link_content_selector" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/register_setting_avatar" android:maxLines="2" android:minLines="2" android:layout_toRightOf="@id/forum_link_imageview" android:layout_alignTop="@id/forum_link_imageview" android:layout_alignBottom="@id/forum_link_imageview" android:layout_centerVertical="true" />
+</RelativeLayout>

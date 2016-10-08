@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/statusContentLayout" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/statusImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/status_icon030" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    <TextView android:id="@id/statusTextView" android:paddingTop="12.0dip" android:paddingBottom="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:layout_toLeftOf="@id/statusImage" style="@style/ChatMessageTextTheme" />
+</RelativeLayout>

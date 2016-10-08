@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="#ffe7e7e7" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="79.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/emptyLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/empty_layout_icon_bottom_margin" android:src="@drawable/album_photo_empty" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/empty_layout_text_size" android:textColor="@color/empty_text_color" android:gravity="center" android:id="@id/album_empty_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/album_empty_tips" android:lineSpacingExtra="5.0dip" />
+    </LinearLayout>
+    <com.xiaoenai.app.ui.component.view.SwipeRefreshLayout android:id="@id/album_alxe_SwipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:paddingBottom="20.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.xiaoenai.app.ui.component.view.SwipeRefreshLayout>
+</FrameLayout>

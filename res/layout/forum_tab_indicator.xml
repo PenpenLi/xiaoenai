@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/forum_toolbar_post_layout" android:background="?forum_toolbar_bg_selector" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/forum_toolbar_post_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?forum_toolbar_post_selector" />
+        <Button android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/forum_toolbar_notify_count_btn" android:background="@drawable/forum_toolbar_notify_red_point" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:text="12" />
+        <ImageView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/forum_toolbar_activity_notify_img" android:paddingTop="5.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_icon_red_point" />
+    </FrameLayout>
+    <TextView android:textSize="10.0sp" android:textColor="?forum_toolbar_text_selector" android:gravity="center" android:id="@id/forum_toolbar_post_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forum_post_title" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.classes.forum.widget.RedPointThreeTabLayout android:layout_gravity="center" android:id="@id/forum_topic_tab" android:background="@color/transparent" android:layout_width="210.0dip" android:layout_height="wrap_content" xiaoenai:first_text="@string/forum_hot" xiaoenai:mid_text="@string/forum_new" xiaoenai:last_text="@string/forum_moment" xiaoenai:all_bg="@drawable/three_bar_bg_selector" xiaoenai:all_color_list="?three_bar_text_color" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/mall_order_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/street_order_check_reviews" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" />
+    <LinearLayout android:id="@id/street_reviews_product_info_linearlayout" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/titleBar">
+        <com.xiaoenai.app.classes.street.widget.StreetProductInfoLayout android:id="@id/street_reviews_product_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:productInfoType="mall_pd_layout_type_order" />
+    </LinearLayout>
+    <View android:background="@color/street_order_divider_grey_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/street_reviews_product_info_linearlayout" />
+    <View android:id="@id/street_reviews_product_divider" android:background="@color/street_order_divider_grey_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="12.0dip" android:layout_below="@id/street_reviews_product_info_linearlayout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/street_reviews_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/street_reviews_product_divider" />
+    <View android:background="@color/street_order_divider_grey_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/street_reviews_layout" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/street_reviews_submit_layout" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/white" android:id="@id/street_reviews_submit_btn" android:background="@drawable/album_send_btn_able" android:paddingLeft="15.0dip" android:paddingTop="6.0dip" android:paddingRight="15.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/street_reviews_submit" />
+    </LinearLayout>
+    <View android:background="@color/street_order_divider_grey_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/street_reviews_submit_layout" />
+</RelativeLayout>

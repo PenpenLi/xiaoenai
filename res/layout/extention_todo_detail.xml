@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootLayout" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" xiaoenai:leftText="@string/todo" xiaoenai:rightDrawable="@drawable/title_bar_icon_point" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottomBar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/todoPreBtnLayout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:gravity="center" android:id="@id/todoPreBtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/extention_todo_pre" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/todoDeletedBtnLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:gravity="center" android:id="@id/todoDeletedBtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/extention_todo_delete" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/todoNextBtnLayout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:gravity="center" android:id="@id/todoNextBtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/extention_todo_next" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleBar">
+        <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:id="@id/editorName" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:id="@id/timeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ScrollView android:id="@id/todo_scroll" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/timeText">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="18.0sp" android:textColor="#ff3d3d3b" android:gravity="top" android:id="@id/todoContent" android:background="#00000000" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lineSpacingExtra="14.0dip" />
+                <EditText android:textSize="18.0sp" android:gravity="top" android:id="@id/todoEdit" android:background="#00000000" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="48.0dip" android:inputType="textMultiLine" android:overScrollMode="ifContentScrolls" />
+            </FrameLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

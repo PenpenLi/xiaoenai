@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="big_face_size">40.0dip</dimen>
+    <dimen name="home_mode_view_width">100.0dip</dimen>
+    <dimen name="lock_btn_layout_margin_top">0.0dip</dimen>
+</resources>

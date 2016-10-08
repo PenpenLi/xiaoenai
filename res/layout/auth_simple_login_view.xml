@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootLayout" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/login_title" xiaoenai:leftDrawable="@drawable/title_bar_icon_close" xiaoenai:rightText="@string/login" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/inputLayout" android:background="@drawable/widget_list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_layout_marginTop">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_item_marginLeft">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/login_account" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/emailEdit" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="26.0dip" android:layout_marginRight="12.0dip" android:hint="@string/login_item_email_hint" android:inputType="textEmailAddress" android:imeOptions="actionNext" android:imeActionLabel="@string/next" />
+                    <ImageButton android:id="@id/emaildelBtn" android:background="@drawable/transparent" android:padding="5.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="43.0dip" android:src="@drawable/home_ad_delete_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView android:contentDescription="@null" style="@style/setting_divider" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_item_marginLeft">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/login_password" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/passwordEdit" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="26.0dip" android:layout_marginRight="12.0dip" android:hint="@string/login_item_password_hint" android:inputType="textPassword" android:imeOptions="actionDone" android:imeActionLabel="@string/done" />
+                    <ImageButton android:id="@id/pwdelBtn" android:background="@drawable/transparent" android:padding="5.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="43.0dip" android:src="@drawable/home_ad_delete_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="19.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/buttonLogin" android:background="@drawable/common_btn_green" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="@string/login" android:layout_below="@id/inputLayout" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff1f629a" android:gravity="center" android:id="@id/forgetTextView" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="@string/login_forgotpass_tip" android:layout_below="@id/buttonLogin" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="42.0dip" android:layout_marginRight="20.0dip">
+        <View android:background="#ffdfdfe2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffa4a4a6" android:background="@drawable/settings_bg" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_or" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dip" android:weightSum="3.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_qq" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="86.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/auth_login_qq" android:scaleType="center" />
+            <TextView android:textSize="13.0dip" android:textColor="#ff40bef3" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/startup_qq_login" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_wechat" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="86.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/auth_login_wechat" android:scaleType="center" />
+            <TextView android:textSize="13.0dip" android:textColor="#ff13ba00" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/startup_wechat_login" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_weibo" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="86.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/auth_login_weibo" android:scaleType="center" />
+            <TextView android:textSize="13.0dip" android:textColor="#ffda372a" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/startup_weibo_login" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

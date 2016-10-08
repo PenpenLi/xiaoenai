@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/about_title" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" />
+    <ScrollView android:orientation="vertical" android:id="@id/scrollView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/titleBar" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="100.0" android:layout_centerHorizontal="true">
+            <ImageView android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="17.0dip" android:contentDescription="@null" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="30.0">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" android:contentDescription="@string/none" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff444444" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/textView_version" android:padding="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.xiaoenai.app.widget.ListItemViewEx android:id="@id/about_reviews" android:background="@drawable/widget_list_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:linePosition="topOnly" xiaoenai:titleText="@string/about_reviews" />
+                <com.xiaoenai.app.widget.ListItemViewEx android:id="@id/about_recommended" android:background="@drawable/widget_list_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:linePosition="topOnly" xiaoenai:topLineShortDirection="leftOnly" xiaoenai:isTopLineShort="true" xiaoenai:titleText="@string/about_recommended" />
+                <com.xiaoenai.app.widget.ListItemViewEx android:id="@id/about_website" android:background="@drawable/widget_list_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:linePosition="both" xiaoenai:topLineShortDirection="leftOnly" xiaoenai:isTopLineShort="true" xiaoenai:titleText="@string/about_website" />
+                <ImageView android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="@dimen/setting_layout_marginTop" android:contentDescription="@null" />
+                <com.xiaoenai.app.widget.ListItemViewEx android:id="@id/about_update_msg" android:background="@drawable/widget_list_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:linePosition="topOnly" xiaoenai:titleText="@string/about_update_msg" />
+                <com.xiaoenai.app.widget.ListItemViewEx android:id="@id/about_update_check" android:background="@drawable/widget_list_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:linePosition="both" xiaoenai:topLineShortDirection="leftOnly" xiaoenai:isTopLineShort="true" xiaoenai:titleText="@string/about_update_check" />
+                <RelativeLayout android:id="@id/about_setting_debug" android:background="@drawable/widget_list_item_bg_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:textSize="@dimen/setting_item_textsize" android:textColor="@color/settings_item_text_color" android:id="@id/about_setting_textview_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_item_marginLeft" android:text="@string/devlop_choose" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/arrow_icon" android:layout_alignParentRight="true" android:contentDescription="@null" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="17.0dip" android:contentDescription="@null" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

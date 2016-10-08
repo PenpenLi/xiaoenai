@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/sticker_load01" />
+    <item android:duration="100" android:drawable="@drawable/sticker_load02" />
+    <item android:duration="100" android:drawable="@drawable/sticker_load03" />
+    <item android:duration="100" android:drawable="@drawable/sticker_load04" />
+</animation-list>

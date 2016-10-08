@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:drawingCacheQuality="low" android:animationCache="true" android:alwaysDrawnWithCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="4.0">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/photoBtn" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="@dimen/chat_input_plus_item_width" android:layout_height="@dimen/chat_input_plus_item_width" android:src="@drawable/chat_input_plus_photo" android:contentDescription="@null" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff363d40" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/chat_input_plus_photo" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/cameraBtn" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="@dimen/chat_input_plus_item_width" android:layout_height="@dimen/chat_input_plus_item_width" android:src="@drawable/chat_input_plus_camera" android:contentDescription="@null" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff363d40" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/chat_input_plus_camera" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/statusBtn" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="@dimen/chat_input_plus_item_width" android:layout_height="@dimen/chat_input_plus_item_width" android:src="@drawable/chat_input_plus_status" android:contentDescription="@null" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff363d40" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/chat_input_plus_status" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/locationBtn" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="@dimen/chat_input_plus_item_width" android:layout_height="@dimen/chat_input_plus_item_width" android:src="@drawable/chat_input_plus_location" android:contentDescription="@null" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff363d40" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/chat_input_plus_sensor" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:baselineAligned="false" android:weightSum="4.0">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/phoneBtn" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="@dimen/chat_input_plus_item_width" android:layout_height="@dimen/chat_input_plus_item_width" android:src="@drawable/chat_input_plus_video_phone" android:contentDescription="@null" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff363d40" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/chat_input_plus_video_phone" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/cardsBtn" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="@dimen/chat_input_plus_item_width" android:layout_height="@dimen/chat_input_plus_item_width" android:src="@drawable/chat_input_plus_cards" android:contentDescription="@null" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff363d40" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/chat_input_plus_cards" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="@dimen/chat_input_plus_item_width" android:layout_height="@dimen/chat_input_plus_item_width" android:src="@drawable/common_dialog_share_icon_sms" android:contentDescription="@null" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff363d40" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/chat_input_plus_location" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="@dimen/chat_input_plus_item_width" android:layout_height="@dimen/chat_input_plus_item_width" android:src="@drawable/chat_input_plus_status" android:contentDescription="@null" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff363d40" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/chat_input_plus_status" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

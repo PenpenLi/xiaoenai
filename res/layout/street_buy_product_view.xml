@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/mall_order_confirm_list_item_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:contentDescription="@null" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/relativeLayout_product" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="16.0dip">
+        <ImageView android:id="@id/imageview_product" android:layout_width="88.0dip" android:layout_height="88.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/street_grey" android:ellipsize="end" android:id="@id/textview_product_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="65.0dip" android:maxLines="2" android:layout_toRightOf="@id/imageview_product" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/street_pink" android:id="@id/textview_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/street_product_count_color" android:id="@id/textview_product_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textview_product_price" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/street_grey" android:id="@id/textview_product_skus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/imageview_product" android:layout_below="@id/textview_product_title" android:layout_alignRight="@id/textview_product_title" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="18.0dip" android:drawablePadding="10.0dip" android:layout_centerVertical="true">
+        <EditText android:textSize="13.0sp" android:textColor="#ff5a677f" android:textColorHint="@color/mall_order_confirm_edittext_hint_color" android:id="@id/street_order_mome_inputedit" android:background="@color/mall_order_confirm_edittext_color" android:paddingLeft="8.0dip" android:paddingRight="26.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/mall_order_confirm_comments" android:singleLine="true" />
+        <RelativeLayout android:id="@id/street_order_mome_clear" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_order_edit_clear" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

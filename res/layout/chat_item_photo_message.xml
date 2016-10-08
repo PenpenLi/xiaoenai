@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.ui.component.view.MaskableFrameLayout android:id="@id/photoMessageLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" xiaoenai:porterduffxfermode="DST_IN">
+        <ImageView android:id="@id/photoMessageImage" android:focusable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+    </com.xiaoenai.app.ui.component.view.MaskableFrameLayout>
+    <ImageView android:id="@id/iv_failed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_load_fail" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <com.xiaoenai.app.ui.component.view.ProgressView android:id="@id/progressView" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_centerInParent="true" xiaoenai:ProgressColor="white" />
+</RelativeLayout>

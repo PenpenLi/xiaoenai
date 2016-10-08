@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/street_product_detail" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rootLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout">
+        <android.support.v4.view.DirectionalViewPager android:id="@id/verticalPager" android:background="@color/mall_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <com.xiaoenai.app.classes.street.widget.StreetPayBottomView android:id="@id/bottomView" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.xiaoenai.app.ui.component.view.ProgressView android:id="@id/progressView" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerInParent="true" android:layout_centerVertical="true" xiaoenai:ProgressColor="grey" />
+</RelativeLayout>

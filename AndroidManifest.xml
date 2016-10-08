@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.xiaoenai.app" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="com.xiaoenai.app.permission.RECEIVE_PERMISSION"/>
+    <permission android:description="@string/xiaoenai_permission" android:name="com.xiaoenai.app.permission.RECEIVE_PERMISSION" android:protectionLevel="normal"/>
+    <permission android:name="com.xiaoenai.app.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.xiaoenai.app.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.xiaoenai.app.common.view.activity.ProxyActivity" android:screenOrientation="portrait"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION"/>
+    <application android:allowBackup="false" android:anyDensity="true" android:enabled="true" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.xiaoenai.app.Xiaoenai" android:persistent="true" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <uses-library android:name="com.sec.android.app.multiwindow" android:required="false"/>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:value="632"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" android:value="598"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" android:value="632"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:value="598"/>
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.enable" android:value="true"/>
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.penwindow.enable" android:value="true"/>
+        <meta-data android:name="com.lge.support.SPLIT_WINDOW" android:value="true"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="DGOYj7Z2CfYlNOaloNGTrZTG"/>
+        <meta-data android:name="TA_APPKEY" android:value="Aqc100265475"/>
+        <meta-data android:name="InstallChannel" android:value="百度"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.xiaoenai.app.classes.startup.LauncherActivity" android:screenOrientation="portrait" android:theme="@style/launcherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.guide.NewVersionIntroActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.newLogin.LoginActivity" android:screenOrientation="portrait" android:theme="@style/WhiteTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xiaoenai.app.classes.register.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.xiaoenai.app.classes.newRegister.phone.PhoneRegisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.xiaoenai.app.classes.newRegister.phone.PhoneRegisterVerifyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.xiaoenai.app.classes.newRegister.phone.PhoneRegisterSettingPWActivity" android:screenOrientation="portrait" android:theme="@style/WhiteTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.home.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.home.mode.ModeSleepActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.home.mode.ModeWakeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.chat.ChatActivity" android:screenOrientation="portrait" android:theme="@style/ChatTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.chat.AddStatusActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xiaoenai.app.classes.chat.ChangeBgActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xiaoenai.app.classes.chat.ChatConnectionFailedActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.lock.LockScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.lock.LockSettingOpenActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.lock.LockSettingCloseActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xiaoenai.app.classes.common.image.ImagePicker$ImagePickerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="CropLabel" android:name="com.xiaoenai.app.classes.common.image.croper.CropImage" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false" android:name="com.xiaoenai.app.classes.common.image.imagePreview.ImageViewPager" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xiaoenai.app.classes.common.webview.WebViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="profile" android:scheme="xiaoenai"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.common.ColorPickerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xiaoenai.app.classes.common.share.ShareActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.forum.ForumActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.forum.ForumPostActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.forum.ForumRegisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.forum.ForumTopicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.forum.ForumNotiTopicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.forum.ForumReplyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.forum.ForumMineInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.forum.ForumMineTopicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.forum.ForumShowoffActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.forum.ForumMomentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetProductDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetOrderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetOrderDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetDeliveryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetProductOrderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetAddressManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetAddOrEditAddressActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetWebPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetCommentsAvtivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetCustomerServiceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.common.DebugActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetServiceChooseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetOrderRemindActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetCommentProductActitvity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetOrderReviewsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetAfterSaleLogisticsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetOrderAfterSaleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.StreetFeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.guide.StreetTaeAuthorizationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.street.guide.StreetLifeServiceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xiaoenai.app.classes.album.PhotoAlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.UpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.SettingTheOtherActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.SettingReleaseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xiaoenai.app.classes.settings.SettingFeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.SettingHelpActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.SettingNewsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.SettingAppConfigActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.SettingAlertActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xiaoenai.app.classes.settings.account.SettingPersonalActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.account.SettingChangePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.settings.account.ResetByEmailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.settings.account.ResetPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.account.ResetPasswordByPhoneNumActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.account.SettingNameOrMailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.account.SettingUserNameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.settings.account.SettingPhoneInputActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.extentions.anniversary.AnniversaryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.extentions.anniversary.AnniversaryAddActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.extentions.anniversary.AnniversaryDatePickerDialog" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.extentions.anniversary.AnniversaryRepeatActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.extentions.menses.MensesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.extentions.menses.MensesSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.extentions.menses.MensesEditSexActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.extentions.todo.TodoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.extentions.todo.TodoDetailActivity" android:screenOrientation="portrait" android:theme="@style/ChatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.chat.history.ChatHistoryActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.xiaoenai.history.edit.dataAction"/>
+                <action android:name="com.xiaoenai.history.edit.editDataAction"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.chat.history.ChatHisEditActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.chat.GifPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.store.StickerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.store.StickerDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.store.StickerDownloadActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.pingplusplus.android.PaymentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.auth.AuthActivity" android:screenOrientation="behind"/>
+        <activity-alias android:exported="true" android:name="com.xiaoenai.app.wxapi.WXPayEntryActivity" android:targetActivity="com.pingplusplus.android.PaymentActivity"/>
+        <activity android:name="com.unionpay.uppay.PayActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoenai.app.classes.extentions.reward.RewardActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.gameCenter.GameCenterActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.gameCenter.GameItemActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoenai.app.classes.gameCenter.WebGameActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xiaoenai.app.widget.imagepicker.BaseImagePickerActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.xiaoenai.app.classes.auth.XeaAuthActivity">
+            <intent-filter>
+                <action android:name="com.xiaoenai.auth"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.xiaoenai.app.classes.auth.XeaBrowserAuthActivity"/>
+        <activity android:name="com.xiaoenai.app.classes.settings.SettingWebPage"/>
+        <activity android:configChanges="orientation" android:exported="true" android:label="@string/app_name" android:name="org.cocos2dx.cpp.AppActivity" android:process=":lovepet" android:screenOrientation="portrait" android:theme="@style/GameTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaoenai.app.classes.chat.ScreenManagerService" android:process=":guis"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.xiaoenai.app.service.ProtectReceiver" android:process=":daemon">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.PACKAGE_RESTARTED"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.xiaoenai.app.service.RemindReceiver">
+            <intent-filter>
+                <action android:name="com.xiaoenai.app.REMIND_REWARD"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaoenai.app.REMIND_ANNIVERSARY"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaoenai.app.REMIND_MENSES"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaoenai.app.REMIND_MALL"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.xiaoenai.app.service.ProtectService" android:process=":daemon"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaoenai.app.service.MessageService">
+            <intent-filter>
+                <action android:name="com.xiaoenai.intent.action.RESTART_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaoenai.app.classes.store.StickerService"/>
+        <service android:exported="false" android:name="com.xiaoenai.app.service.DownloadService">
+            <intent-filter>
+                <action android:name="com.xiaoenai.service.DOWNLOAD"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.xiaoenai.app.service.ApkDownloadService"/>
+        <service android:exported="false" android:name="com.xiaoenai.app.download.services.DownloadService">
+            <intent-filter>
+                <action android:name="com.xiaoenai.app.download.ACTION_IDownloadService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.xiaoenai.app.download.services.TrafficCounterService"/>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaoenai.app.utils.OpenUDID_service">
+            <intent-filter>
+                <action android:name="org.openudid.GETUDID"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:label="NotificationCenter" android:name="com.igexin.sdk.PushService" android:process=":push"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.xiaoenai.app.service.MiPushMsgReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.igexin.sdk.action.refreshls"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.xiaoenai.app.classes.forum.ForumNotifyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xiaoenai.app.classes.forum.ForumMineActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xiaoenai.app.feature.photopreview.view.impl.ImageViewPager" android:screenOrientation="portrait"/>
+        <activity android:name="com.xiaoenai.app.feature.photopicker.view.PhotoPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xiaoenai.app.feature.photopicker.view.PickerPreviewActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.xiaoenai.app.feature.feedback.view.activity.FeedbackActivity" android:screenOrientation="portrait" android:theme="@style/FeedbackTheme" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.meiqia.core.MeiQiaService"/>
+        <activity android:name="com.xiaoenai.app.feature.feedback.view.activity.ChatImageViewPager" android:screenOrientation="portrait"/>
+        <activity android:name="com.xiaoenai.app.feature.photoalbum.view.activity.PhotoAlbumActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.xiaoenai.app.feature.photoalbum.view.activity.PostPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xiaoenai.app.feature.photoalbum.preview.PhotoPreviewActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="android.app.lib_name" android:value="cocos2dlua"/>
+        <service android:name="com.xiaoenai.tool.log.SuspendWindowService"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mob.tools.MobUIShell" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <data android:scheme="tencent100265475"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.xiaoenai.app.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.alimama.mobile.sdk.shell.DownloadingService" android:process=":alimamaDownload">
+            <intent-filter>
+                <action android:name="com.alimama.mobile.sdk.download.action"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboard|orientation" android:launchMode="standard" android:name="com.alimama.mobile.sdk.shell.MMUDetail" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation" android:launchMode="standard" android:name="com.alimama.mobile.sdk.shell.MMUBrowserWebView" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.inmobi.rendering.InMobiAdActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.alibaba.sdk.android.login.ui.LoginWebViewActivity"/>
+        <activity android:name="com.alibaba.sdk.android.login.ui.QrLoginConfirmActivity"/>
+        <activity android:name="com.alibaba.sdk.android.login.ui.QrLoginActivity"/>
+        <activity android:name="com.alibaba.sdk.android.webview.BaseWebViewActivity"/>
+        <activity android:name="com.alibaba.sdk.android.webview.feedback.FeedbackActivity" android:theme="@style/feedback_title"/>
+        <activity android:name="com.alibaba.sdk.android.webview.feedback.SendFeedbackActivity" android:theme="@style/feedback_title"/>
+        <activity android:name="com.alibaba.nb.android.trade.ui.activity.AliTradeWebViewActivity">
+            <intent-filter>
+                <action android:name="COM_TAOBAO_TAE_SDK_TRADE_WEB_VIEW_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.alibaba.nb.android.trade.ui.activity.AliTradeNativeTaobaoClientActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="alisdk"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="android.test.runner"/>
+    </application>
+</manifest>

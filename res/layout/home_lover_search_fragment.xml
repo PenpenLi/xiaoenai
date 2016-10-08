@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/loverSearchLayout" android:background="#ffe38cb0" android:layout_width="fill_parent" android:layout_height="155.0dip" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/searchlayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="13.0dip" android:textColor="#fffff7fa" android:gravity="center" android:id="@id/lover_search_note_txt" android:layout_width="wrap_content" android:layout_height="18.0dip" android:text="@string/home_search_note" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/editLayout" android:background="@drawable/searchview_edit_bg" android:layout_width="328.0dip" android:layout_height="40.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/lover_search_note_txt" android:layout_centerHorizontal="true">
+            <EditText android:textSize="15.0sp" android:textColor="#ff585858" android:textColorHint="#ff808080" android:id="@id/inputEdit" android:background="@color/transparent" android:paddingLeft="17.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="105.0dip" android:hint="@string/home_input_hint" android:singleLine="true" android:layout_centerVertical="true" android:imeOptions="actionSearch" android:imeActionLabel="@string/find" />
+            <com.xiaoenai.app.classes.home.view.wiget.RoundRectangleLayout android:id="@id/searchBtn" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginRight="3.0dip" android:minWidth="73.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" xiaoenai:backgroundColor="#ffe38caf" xiaoenai:radius="17.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/icon_search" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="12.0dip" android:text="@string/find" android:lines="1" />
+            </com.xiaoenai.app.classes.home.view.wiget.RoundRectangleLayout>
+            <ImageView android:id="@id/cleanView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/home_ad_delete_btn" android:layout_toLeftOf="@id/searchBtn" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/editLayout" android:layout_centerHorizontal="true">
+            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_my_id" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/myUserIdText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 123456789" android:lines="2" android:layout_toRightOf="@id/text" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/copyBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:src="@drawable/button_copy" android:layout_toRightOf="@id/myUserIdText" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/waitingLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <FrameLayout android:gravity="center" android:id="@id/avatarLayout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.xiaoenai.app.ui.component.view.AvatarView android:layout_gravity="center" android:id="@id/avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/register_upload_avatar" android:scaleType="centerCrop" />
+        </FrameLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#fffff7fa" android:gravity="center" android:id="@id/messageText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="@string/home_request_sended" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="10.0dip">
+            <ImageView android:gravity="center" android:id="@id/cancelRequest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/icon_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

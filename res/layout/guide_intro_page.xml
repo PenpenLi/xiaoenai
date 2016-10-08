@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/transparent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@null" />
+    <TextView android:textSize="12.0sp" android:textColor="#4cffffff" android:gravity="center" android:id="@id/shareText" android:paddingLeft="30.0dip" android:paddingTop="10.0dip" android:paddingRight="30.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/guide_page_4_tips" android:drawableLeft="@drawable/guide_slide_page_check" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

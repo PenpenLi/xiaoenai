@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="big_face_size">50.0dip</dimen>
+    <dimen name="home_mode_view_width">200.0dip</dimen>
+    <dimen name="lock_btn_layout_margin_top">5.0dip</dimen>
+    <dimen name="login_top_height">201.0dip</dimen>
+    <dimen name="login_top_margin">40.0dip</dimen>
+    <dimen name="sticker_cover_height">195.0dip</dimen>
+    <dimen name="sticker_cover_width">250.0dip</dimen>
+</resources>

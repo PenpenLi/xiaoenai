@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/street_new_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/mall_service_choose" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" />
+    <RelativeLayout android:id="@id/street_refund_sales_return_layout" android:background="@drawable/widget_list_item_bg" android:layout_width="fill_parent" android:layout_height="98.0dip" android:layout_marginBottom="12.0dip">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="11.0dip" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/street_refund_icon" />
+            <TextView android:textSize="@dimen/mall_service_choose_txt_size" android:textColor="#ff545454" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/mall_refund_sales_return" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/mall_product_detail_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/street_exchange_goods_layout" android:background="@drawable/widget_list_item_bg" android:layout_width="fill_parent" android:layout_height="98.0dip">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="11.0dip" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/street_exchange_goods_icon" />
+            <TextView android:textSize="@dimen/mall_service_choose_txt_size" android:textColor="#ff545454" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/mall_exchange_goods" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/mall_product_detail_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

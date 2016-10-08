@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/chat_addstatus_title" xiaoenai:leftText="@string/cancel" xiaoenai:rightText="@string/done" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/chat_status_input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip">
+        <EditText android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/edittext_content" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:inputType="textShortMessage" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ffd5d5d5" android:layout_gravity="right" android:id="@id/textview_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="25.0dip" android:text="@string/chat_addstatus_text_max" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/chat_addstatus_hint" />
+</LinearLayout>

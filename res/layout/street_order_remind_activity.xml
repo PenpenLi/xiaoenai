@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/mall_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" xiaoenai:titleBarTitle="@string/street_order_remind" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" />
+    <LinearLayout android:orientation="vertical" android:id="@id/order_state_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/titleBar">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip">
+            <ImageView android:id="@id/order_remind_state_imageView" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/mall_order_waiting" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            <TextView android:textSize="17.0dip" android:textColor="@color/mall_order_pay_waiting_color" android:id="@id/order_remind_state_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="@string/street_order_remind_wait" android:layout_below="@id/order_remind_state_imageView" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip">
+            <RelativeLayout android:id="@id/order_remind_detail_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/divider" android:background="@color/mall_profile_item_divider_color" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" android:layout_alignParentTop="true" android:contentDescription="@null" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff8c8c8c" android:id="@id/order_remind_detail_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_below="@id/divider" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip">
+            <Button android:textSize="18.0sp" android:gravity="center" android:id="@id/order_remind_button1" android:background="@drawable/mall_order_pink_btn" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="18.0sp" android:gravity="center" android:id="@id/order_remind_button2" android:background="@drawable/mall_order_pink_full_btn" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.xiaoenai.app.ui.component.view.ProgressView android:id="@id/progressView" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerInParent="true" android:layout_centerVertical="true" xiaoenai:ProgressColor="grey" />
+</RelativeLayout>

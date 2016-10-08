@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" xiaoenai:leftText="@string/back" xiaoenai:rightText="@string/auth_retry" />
+    <WebView android:id="@id/extentionCommonWebView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleBar" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="big_face_size">64.0dip</dimen>
+    <dimen name="home_mode_view_width">220.0dip</dimen>
+    <dimen name="lock_btn_layout_margin_top">10.0dip</dimen>
+    <dimen name="sticker_cover_height">195.0dip</dimen>
+    <dimen name="sticker_cover_width">250.0dip</dimen>
+    <dimen name="free_call_toast_height">226.0dip</dimen>
+</resources>

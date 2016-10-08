@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:topbar="http://schemas.android.com/apk/res-auto" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/reward_title_name" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" xiaoenai:leftText="@string/home_discover" />
+            <ListView android:id="@id/rewardListView" android:background="@android:color/transparent" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/widget_list_item_bg_selector" android:cacheColorHint="#00000000" android:divider="@null" />
+        </LinearLayout>
+        <com.xiaoenai.app.ui.component.view.ProgressView android:id="@id/progressView" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerInParent="true" xiaoenai:ProgressColor="grey" />
+    </RelativeLayout>
+</LinearLayout>

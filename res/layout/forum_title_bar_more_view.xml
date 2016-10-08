@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/more_image" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_icon" />
+    <TextView android:layout_gravity="right" android:id="@id/redPoint_view" android:background="@drawable/setting_icon_red_point" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_alignParentRight="true" />
+</FrameLayout>

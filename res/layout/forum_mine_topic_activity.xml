@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?reply_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:topbar="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" topbar:leftDrawable="@drawable/title_bar_icon_back" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleBar" layout="@layout/forum_topic_fragment" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#00000000" android:drawingCacheQuality="low" android:animationCache="true" android:alwaysDrawnWithCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:weightSum="4.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/weixinFriend" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_dialog_share_icon_wechat" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_text_wechat" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/weixinMoment" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_dialog_share_icon_wechatfriend" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_text_wechat_friend" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/sinaWeibo" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_dialog_share_icon_sinaweibo" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_text_sinaweibo" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/tencentWeibo" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_dialog_share_icon_tweibo" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_text_tweibo" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="20.0dip" android:weightSum="4.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/qqFriend" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_dialog_share_icon_qq" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_text_qq" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/qqZone" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_dialog_share_icon_qzone" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_text_qzone" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/renren" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_dialog_share_icon_renren" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_text_renren" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center" android:id="@id/shortMsg" android:background="@drawable/chat_input_plus_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_dialog_share_icon_sms" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_text_sms" android:shadowColor="#88000000" android:shadowDy="-2.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

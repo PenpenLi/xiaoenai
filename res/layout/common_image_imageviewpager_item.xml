@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.ui.photoview.PhotoView android:id="@id/imageViewPagerImage" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="66.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="9.0sp" android:textColor="@color/white" android:id="@id/image_get_origin_btn" android:background="@drawable/common_image_save_origion_icon" android:layout_width="80.0dip" android:layout_height="35.0dip" />
+    </LinearLayout>
+    <ImageButton android:id="@id/image_save_to_album" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_image_save_icon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.xiaoenai.app.ui.component.view.ProgressView android:id="@id/imageViewPagerProgressView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" xiaoenai:ProgressColor="white" />
+</RelativeLayout>

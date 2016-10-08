@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/space_divider" android:scaleType="centerCrop" android:layout_centerInParent="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/imageSelected" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/album_photo_select" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null" />
+</RelativeLayout>

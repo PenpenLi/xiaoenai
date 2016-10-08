@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/pull_to_refresh_footer" android:paddingLeft="0.0dip" android:paddingTop="12.0dip" android:paddingRight="0.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.ui.component.view.ProgressView android:layout_gravity="center" android:id="@id/refresh_list_footer_progressbar" android:visibility="visible" android:layout_width="@dimen/progress_height" android:layout_height="@dimen/progress_height" android:indeterminate="true" xiaoenai:ProgressColor="white" style="?android:attr/progressBarStyleSmall" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="#ff939393" android:gravity="center" android:layout_gravity="center" android:id="@id/refresh_list_footer_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nomore" />
+</FrameLayout>

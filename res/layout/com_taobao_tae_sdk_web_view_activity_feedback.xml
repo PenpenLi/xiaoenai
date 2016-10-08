@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/com_taobao_tae_sdk_web_view_activity_feedback_handwriter_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/com_taobao_tae_sdk_web_view_activity_feedback_bottom_layout">
+        <com.alibaba.sdk.android.webview.views.HandWriter android:layout_gravity="center" android:id="@id/com_taobao_tae_sdk_web_view_activity_feedback_handwriter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/com_taobao_tae_sdk_web_view_activity_feedback_bottom_layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/com_taobao_tae_sdk_web_view_activity_feedback_refresh_button" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="刷新" android:layout_weight="1.0" />
+        <ImageView android:background="#ff707070" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/com_taobao_tae_sdk_web_view_activity_feedback_forward_button" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="下一步" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

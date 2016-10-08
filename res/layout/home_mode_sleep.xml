@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootLayout" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/home_mode_sleep_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_mode_sleep_bg" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:contentDescription="@string/none" />
+    <ImageView android:id="@id/minimiseBtn" android:padding="20.0dip" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/home_mode_mini" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="34.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.xiaoenai.app.widget.DigitalClock android:textSize="40.0sp" android:id="@id/textViewClock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ffb6dcf1" android:gravity="center" android:id="@id/textViewSleepTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#4dffffff" android:id="@id/sleep_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip" android:text="@string/home_mode_sleep_permit_alarm" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <Button android:textSize="19.0sp" android:textColor="#ffffffff" android:id="@id/buttonWake" android:tag="9" android:background="@drawable/home_mode_sleep_wakebtn" android:layout_width="135.0dip" android:layout_height="50.0dip" android:layout_marginBottom="10.0dip" android:text="@string/home_mode_wake_now" android:layout_above="@id/sleep_textview" android:layout_centerHorizontal="true" />
+    <AbsoluteLayout android:id="@id/extension_sleep_abs_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/people_imageview" android:background="@drawable/home_mode_sleep_people" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/bubble_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

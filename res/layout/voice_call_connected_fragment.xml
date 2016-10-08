@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/voice_call_connected_fragment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/voice_call_connected_control_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="33.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/voice_call_connected_endcall_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_marginRight="26.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/voice_call_connected_endcall_img" android:background="@drawable/voice_call_cancel_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/phone_call_hangup" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/voice_call_connected_mute_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/voice_call_connected_endcall_item">
+            <ImageView android:id="@id/voice_call_connected_mute_img" android:background="@drawable/voice_call_mute_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/phone_mute_state" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/voice_call_connected_speaker_control_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/voice_call_connected_endcall_item">
+            <ImageView android:id="@id/voice_call_connected_speaker_img" android:background="@drawable/voice_call_speaker_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/phone_hand_free_state" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/voice_call_answering_connect_state" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="@string/network_inferior_tips" android:layout_above="@id/voice_call_connected_time" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/voice_call_connected_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="00:00:00" android:layout_above="@id/voice_call_connected_control_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

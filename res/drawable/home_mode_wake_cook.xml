@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="450" android:drawable="@drawable/home_mode_wakeup_cook_01" />
+    <item android:duration="450" android:drawable="@drawable/home_mode_wakeup_cook_02" />
+    <item android:duration="450" android:drawable="@drawable/home_mode_wakeup_cook_01" />
+</animation-list>

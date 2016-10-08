@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rootLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:xiaoenai="http://schemas.android.com/apk/com.xiaoenai.app.common">
+    <com.xiaoenai.app.feature.photopreview.view.ImageViewPagerWidget android:id="@id/image_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.xiaoenai.app.common.view.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" xiaoenai:titleBarTheme="black" xiaoenai:leftText="@string/image_picker_title" xiaoenai:titleBarTitle="@string/album_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_Layout" android:background="#c0000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/feeling" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="8.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="12.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/origin" android:background="@drawable/album_roundconner" android:padding="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="14.0dip" android:text="@string/album_origin" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/download" android:background="@drawable/album_roundconner" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_marginBottom="14.0dip" android:src="@drawable/album_photo_preview_detail_down" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

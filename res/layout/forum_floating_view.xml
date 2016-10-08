@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.marshalchen.ultimaterecyclerview.ui.floatingactionbutton.FloatingActionButto android:gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="40.0dip" fab:icon="@drawable/forum_scoll_top_icon" fab:urv_fab_colorPressed="#ffec407a" fab:urv_fab_colorNormal="#ffff5f9a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fab="http://schemas.android.com/apk/res-auto" />

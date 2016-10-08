@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/street_cart_title" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="19.0dip" android:src="@drawable/street_icon_tae_cart" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:id="@id/tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="@string/street_tae_cart_tips" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="19.0dip" android:text="@string/street_tae_tips" />
+        <Button android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/authorization_btn" android:background="@drawable/street_bottom_btn_bg_pink" android:layout_width="120.0dip" android:layout_height="36.0dip" android:text="@string/street_tae_login_btn" />
+    </LinearLayout>
+</RelativeLayout>

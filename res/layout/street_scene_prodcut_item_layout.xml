@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/street_product_item_bg" android:paddingLeft="@dimen/street_scene_item_paddingLeft" android:paddingTop="@dimen/street_scene_item_paddingTop" android:paddingRight="@dimen/street_scene_item_paddingLeft" android:paddingBottom="@dimen/street_scene_item_paddingBottom" android:layout_width="fill_parent" android:layout_height="140.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/product_pic_img" android:layout_width="125.0dip" android:layout_height="125.0dip" android:src="@drawable/icon" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <RelativeLayout android:id="@id/product_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/street_scene_item_title_marginLeft">
+        <TextView android:textSize="@dimen/street_snapping_item_title_txt_size" android:textColor="@color/street_rush_item_title" android:ellipsize="end" android:id="@id/product_title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="【恋蝶私语】施华洛世奇元素水晶飘飘雨蝶手链凑字数" android:maxLines="2" />
+        <TextView android:textSize="@dimen/street_snapping_item_sale_price_txt_size" android:textStyle="bold" android:textColor="@color/street_pink" android:id="@id/product_sale_price_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥99.00" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/street_new_product_state_text_color" android:id="@id/product_state_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1314人已买" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

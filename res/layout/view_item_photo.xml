@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="1.0dip" android:layout_width="162.0dip" android:layout_height="162.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.ui.component.view.ChatImageView android:id="@id/photoMessageImage" android:focusable="false" android:longClickable="false" android:layout_width="162.0dip" android:layout_height="162.0dip" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <ImageView android:id="@id/iv_failed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_load_fail" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <com.xiaoenai.app.ui.component.view.ProgressView android:id="@id/progressView" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_centerInParent="true" xiaoenai:ProgressColor="white" />
+</RelativeLayout>

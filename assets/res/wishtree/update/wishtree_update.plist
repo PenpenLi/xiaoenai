@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>update_bg_lvsejindu.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,134},{400,32}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{400,32}</string>
+			</dict>
+			<key>update_bg_tips.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{346,98},{121,117}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{121,117}</string>
+			</dict>
+			<key>update_but_close.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{32,134},{84,87}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{84,87}</string>
+			</dict>
+			<key>update_but_close_press.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{119,134},{84,87}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{84,87}</string>
+			</dict>
+			<key>update_but_green_nor.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{346,0},{188,98}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{188,98}</string>
+			</dict>
+			<key>update_but_green_press.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{534,0},{188,98}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{188,98}</string>
+			</dict>
+			<key>update_but_red_nor.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{722,0},{188,98}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{188,98}</string>
+			</dict>
+			<key>update_but_red_press.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{910,0},{188,98}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{188,98}</string>
+			</dict>
+			<key>update_dianjijinru.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{293,134},{153,47}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{153,47}</string>
+			</dict>
+			<key>update_dt_bg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{823,98},{57,32}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{57,32}</string>
+			</dict>
+			<key>update_icon_back_gray.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{206,134},{84,87}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{84,87}</string>
+			</dict>
+			<key>update_icon_back_nor.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{32,218},{84,87}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{84,87}</string>
+			</dict>
+			<key>update_icon_back_press.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{119,218},{84,87}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{84,87}</string>
+			</dict>
+			<key>update_icon_repair_gray.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{206,218},{84,87}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{84,87}</string>
+			</dict>
+			<key>update_icon_repair_nor.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{467,98},{84,87}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{84,87}</string>
+			</dict>
+			<key>update_icon_repair_press.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{554,98},{84,87}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{84,87}</string>
+			</dict>
+			<key>update_jdt_highlight.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{823,130},{57,32}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{57,32}</string>
+			</dict>
+			<key>update_logo_aiqingshu.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{346,134}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{346,134}</string>
+			</dict>
+			<key>update_queding.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{641,98},{91,50}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{91,50}</string>
+			</dict>
+			<key>update_quxiao.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{732,98},{91,50}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{91,50}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>wishtree_update.png</string>
+			<key>realTextureFileName</key>
+			<string>wishtree_update.png</string>
+			<key>size</key>
+			<string>{1024,1024}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1024</integer>
+			<key>height</key>
+			<integer>1024</integer>
+		</dict>
+	</dict>
+</plist>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/guide_title_color" android:id="@id/title_textview" android:background="#ffefeff4" android:paddingLeft="15.0dip" android:paddingTop="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+    <android.support.v7.widget.RecyclerView android:id="@id/street_guide_recyclerview" android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

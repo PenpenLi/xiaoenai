@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" xiaoenai:titleBarTitle="@string/store_chat_face" xiaoenai:rightText="@string/store_close" />
+    <LinearLayout android:orientation="vertical" android:background="#fffafafa" android:padding="9.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/store_download_bg" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="22.0dip" android:textColor="#ff2f3033" android:id="@id/store_sticker_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:id="@id/store_sticker_thumb_layout" android:padding="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/store_sticker_name">
+                <ImageView android:id="@id/store_sticker_thumb" android:layout_width="54.0dip" android:layout_height="54.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/store_progress_layout" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="2.0" android:layout_below="@id/store_sticker_thumb_layout">
+                <ProgressBar android:id="@id/store_download_progressbar" android:background="@drawable/store_download_progress_bg_track" android:paddingLeft="3.0dip" android:paddingRight="2.0dip" android:layout_width="200.0dip" android:layout_height="24.0dip" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/store_download_progress_style" style="?android:attr/progressBarStyleHorizontal" />
+                <ImageButton android:layout_gravity="center" android:id="@id/store_cancel_download_btn" android:background="@drawable/store_cancel_download_btn" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dip" android:textColor="#ff939699" android:gravity="center" android:id="@id/store_download_size" android:padding="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/store_progress_layout" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="5.0">
+            <TextView android:textSize="14.0dip" android:textColor="#ff7e848c" android:gravity="center" android:padding="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/store_download_tip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

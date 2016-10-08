@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/viewpager_expressionkeyboard" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:cacheColorHint="@color/white" android:layout_weight="4.0" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/pageIndex" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageViewpage1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_input_face_index_dim" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageViewpage2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/chat_input_face_index_light" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageViewpage3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/chat_input_face_index_light" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageViewpage4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/chat_input_face_index_light" android:contentDescription="@null" />
+    </LinearLayout>
+</LinearLayout>

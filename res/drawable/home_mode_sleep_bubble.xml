@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="170" android:drawable="@drawable/home_mode_sleep_bubble_01" />
+    <item android:duration="170" android:drawable="@drawable/home_mode_sleep_bubble_02" />
+    <item android:duration="170" android:drawable="@drawable/home_mode_sleep_bubble_03" />
+    <item android:duration="170" android:drawable="@drawable/home_mode_sleep_bubble_04" />
+    <item android:duration="170" android:drawable="@drawable/home_mode_sleep_bubble_05" />
+    <item android:duration="170" android:drawable="@drawable/home_mode_sleep_bubble_04" />
+    <item android:duration="170" android:drawable="@drawable/home_mode_sleep_bubble_03" />
+    <item android:duration="170" android:drawable="@drawable/home_mode_sleep_bubble_02" />
+    <item android:duration="170" android:drawable="@drawable/home_mode_sleep_bubble_01" />
+</animation-list>

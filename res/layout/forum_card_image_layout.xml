@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/itemWholeLayout" android:background="@drawable/forum_topic_img_loading" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/forum_card_img_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <com.xiaoenai.app.ui.component.view.ProgressView android:layout_gravity="center" android:id="@id/img_loading_progressbar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginBottom="15.0dip" android:indeterminate="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" xiaoenai:ProgressColor="grey" style="?android:attr/progressBarStyleSmall" />
+    <TextView android:textColor="@color/forum_grey_text_color" android:id="@id/forum_card_txt_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="点击查看" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

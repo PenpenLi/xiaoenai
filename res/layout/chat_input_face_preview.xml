@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/faceBgView" android:background="@drawable/chat_face_big_preview3" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.xiaoenai.app.widget.gif.GifView android:id="@id/faceImageView" android:layout_width="120.0dip" android:layout_height="120.0dip" android:scaleType="centerCrop" />
+        <TextView android:id="@id/faceTipsView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/faceImageView" />
+    </RelativeLayout>
+</LinearLayout>

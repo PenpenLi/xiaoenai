@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="?forum_top_notify_color" android:layout_gravity="center_horizontal" android:id="@id/forum_header_notify_count" android:background="@drawable/forum_notify_count_bg" android:paddingLeft="28.0dip" android:paddingTop="13.0dip" android:paddingRight="14.0dip" android:paddingBottom="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:drawableRight="@drawable/black_right_arrow" android:drawablePadding="27.0dip" />
+    <com.xiaoenai.app.classes.common.widget.WrapContentListView android:id="@id/forum_header_top_topic" android:paddingTop="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="0.0px" />
+</LinearLayout>

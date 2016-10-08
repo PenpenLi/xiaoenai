@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/first_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.xiaoenai.app.classes.common.widget.RedView android:layout_gravity="center" android:id="@id/first_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" xiaoenai:red_view_text="热门" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/mid_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.xiaoenai.app.classes.common.widget.RedView android:layout_gravity="center" android:id="@id/mid_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" xiaoenai:red_view_text="新鲜" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/last_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.xiaoenai.app.classes.common.widget.RedView android:layout_gravity="center" android:id="@id/last_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" xiaoenai:red_view_text="活动" />
+    </FrameLayout>
+</LinearLayout>

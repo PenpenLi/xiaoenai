@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" xiaoenai:titleBarTitle="@string/store_chat_face" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" xiaoenai:leftText="@string/store_title" />
+    <ScrollView android:id="@id/store_scrollView" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/store_detail_show_bg" android:layout_width="fill_parent" android:layout_height="300.0dip">
+                <ImageView android:id="@id/store_cover_bg" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <LinearLayout android:gravity="center" android:id="@id/store_cover_layout" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/store_sticker_show_item_image" android:background="@android:color/transparent" android:layout_width="250.0dip" android:layout_height="195.0dip" android:layout_centerInParent="true" />
+                </LinearLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@id/store_price_layout" android:background="@drawable/store_face_price_bg" android:paddingLeft="9.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:id="@id/store_sticker_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/store_download_btn" android:background="@drawable/common_btn_green" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/store_download" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff626366" android:id="@id/store_face_introduce" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/store_download_btn" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffadadad" android:id="@id/store_long_click_tips" android:paddingTop="8.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/store_long_click_to_preview" android:layout_below="@id/store_face_introduce" android:layout_centerHorizontal="true" />
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/store_long_click_tips" android:layout_alignParentBottom="true">
+                    <com.xiaoenai.app.widget.ScrollGridview android:gravity="center" android:id="@id/face_item_lstview" android:background="@android:color/transparent" android:clickable="false" android:layout_width="fill_parent" android:layout_height="72.0dip" android:listSelector="@drawable/transparent" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

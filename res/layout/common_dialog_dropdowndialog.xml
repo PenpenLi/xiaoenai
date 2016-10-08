@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#b0000000" android:drawingCacheQuality="low" android:animationCache="true" android:alwaysDrawnWithCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="@drawable/common_dialog_dropdown_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff222222" android:gravity="center" android:autoLink="none" android:id="@id/titleText" android:paddingTop="8.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/xiaoenai_dialog_tips_title" android:maxLines="2" />
+            <FrameLayout android:gravity="center" android:id="@id/avatarLayout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                <com.xiaoenai.app.ui.component.view.AvatarView android:layout_gravity="center" android:id="@id/dialogAvatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_xiaoen" />
+            </FrameLayout>
+            <TextView android:textSize="15.0sp" android:textColor="#ff222222" android:gravity="center" android:autoLink="none" android:id="@id/messageText" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:maxHeight="350.0dip" android:text="" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff222222" android:gravity="center" android:autoLink="none" android:id="@id/messageText2" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:maxHeight="150.0dip" android:text="" />
+        </LinearLayout>
+        <Button android:textSize="16.0sp" android:textColor="#ff4d5662" android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/buttonClose" android:background="@drawable/transparent" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="38.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="0.0dip" android:text="" />
+    </LinearLayout>
+</RelativeLayout>

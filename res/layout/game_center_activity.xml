@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffefeff3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/game_name" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" xiaoenai:leftText="@string/home_discover" />
+    <com.xiaoenai.app.widget.ViewPagerInsideListView android:id="@id/game_center_downloaded_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="@null" android:layout_below="@id/titleBar" />
+    <com.xiaoenai.app.ui.component.view.ProgressView android:id="@id/gameProgressView" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerInParent="true" android:layout_centerVertical="true" xiaoenai:ProgressColor="grey" />
+</RelativeLayout>

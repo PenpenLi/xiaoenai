@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/anniversaryItemHeader" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <RelativeLayout android:id="@id/anniversary_layout" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+        <RelativeLayout android:id="@id/anniversaryItemBg" android:background="@drawable/extension_anniversary_cell_pink" android:layout_width="fill_parent" android:layout_height="42.0dip">
+            <TextView android:textSize="@dimen/anniversary_item_days_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/anniversaryItemDay" android:layout_width="28.0dip" android:layout_height="42.0dip" android:text="@string/anniversary_day" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/anniversaryItemDayNum" android:layout_width="58.0dip" android:layout_height="42.0dip" android:layout_marginRight="28.0dip" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:gravity="center|right" android:id="@id/anniversaryStatus" android:layout_width="58.0dip" android:layout_height="42.0dip" android:layout_marginRight="100.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff545454" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/anniversaryItemText" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="95.0dip" android:singleLine="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/anniversary_timeline_line_img" android:background="@drawable/extension_anniversary_timeline" android:layout_width="wrap_content" android:layout_height="42.0dip" />
+    <ImageView android:id="@id/anniversary_timeline_img" android:layout_width="wrap_content" android:layout_height="42.0dip" android:src="@drawable/extension_anniversary_timeline_pink" />
+</RelativeLayout>

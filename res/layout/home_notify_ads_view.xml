@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/home_notify_banner_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xiaoenai.app.widget.BannerView android:id="@id/home_notify_banner" android:layout_width="fill_parent" android:layout_height="50.0dip" android:scaleType="fitXY" />
+    <ImageButton android:id="@id/home_notify_banner_delete_btn" android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_ad_delete_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

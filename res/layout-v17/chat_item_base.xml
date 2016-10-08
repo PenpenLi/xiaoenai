@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/itemWholeLayout" android:paddingBottom="20.0dip" android:focusable="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:id="@id/messageTime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="14.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/ChatTimeTextTheme" />
+    <RelativeLayout android:id="@id/contentLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/messageTime">
+        <FrameLayout android:gravity="center" android:id="@id/messageAvatarLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_alignParentRight="true">
+            <LinearLayout android:gravity="center" android:id="@id/ll_avatar" android:background="@drawable/bg_chat_avatar" android:layout_width="44.0dip" android:layout_height="44.0dip">
+                <com.xiaoenai.app.ui.component.view.AvatarView android:layout_gravity="center" android:id="@id/messageAvatar" android:layout_width="43.0dip" android:layout_height="43.0dip" android:scaleType="centerCrop" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/pickerAvatarBg" android:layout_width="44.0dip" android:layout_height="44.0dip">
+                <com.xiaoenai.app.ui.component.view.AvatarView android:layout_gravity="center" android:id="@id/pickerAvatar" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:scaleType="centerCrop" />
+            </LinearLayout>
+        </FrameLayout>
+        <RelativeLayout android:gravity="right" android:id="@id/userNameLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/messageAvatarLayout">
+            <TextView android:textSize="10.0dip" android:textColor="@color/feedback_msg_item_color" android:gravity="right" android:id="@id/userNameTextView" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/messageBody" android:background="@drawable/bg_chat_item_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="258.0dip" android:layout_toLeftOf="@id/messageAvatarLayout" android:layout_below="@id/userNameLayout" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/messageStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toLeftOf="@id/messageBody" android:layout_alignTop="@id/messageBody" android:layout_alignBottom="@id/messageBody" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/messageBody">
+            <RelativeLayout android:id="@id/messageStatusBody" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.xiaoenai.app.ui.component.view.ProgressView android:id="@id/messageSending" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" xiaoenai:ProgressColor="grey" />
+                <ImageView android:id="@id/messageFailed" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_chat_fail" android:layout_centerVertical="true" android:contentDescription="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/messageStatusTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/messageBody" android:layout_alignTop="@id/messageBody" android:layout_alignBottom="@id/messageBody" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/messageBody">
+            <TextView android:gravity="center" android:id="@id/tv_messageStatus" android:background="@drawable/shape_chat_status_arrived_bg" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="14.0dip" android:layout_marginBottom="2.0dip" android:text="@string/chat_message_status_unread" style="@style/StatusTextTheme" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/rl_voice_status" android:paddingLeft="7.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/messageStatusTxt" android:layout_alignTop="@id/messageBody" android:layout_alignBottom="@id/messageBody">
+            <ImageView android:id="@id/iv_load_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_chat_reload" android:contentDescription="@null" />
+        </LinearLayout>
+        <ImageView android:id="@id/voiceUnread" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/icon_chat_new" android:scaleType="centerCrop" android:layout_toRightOf="@id/messageBody" android:layout_alignTop="@id/messageBody" android:contentDescription="@null" />
+    </RelativeLayout>
+</RelativeLayout>

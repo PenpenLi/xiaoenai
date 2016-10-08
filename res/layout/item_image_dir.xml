@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_dir_photo" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="centerCrop" />
+    <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:id="@id/image_dir_name" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/image_dir_photo" android:layout_centerVertical="true" />
+    <ImageView android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/space_favor_item_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/home_discover_item_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

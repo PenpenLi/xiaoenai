@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/home_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/home_todo" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/icon" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_todo_icon" android:contentDescription="@null" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:gravity="center_horizontal" android:id="@id/nameText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/todo" />
+    </LinearLayout>
+    <com.xiaoenai.app.widget.remindButton.RemindButton android:id="@id/remind_btn" android:layout_width="42.0dip" android:layout_height="19.0dip" android:layout_marginTop="7.0dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

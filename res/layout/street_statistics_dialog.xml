@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#cf000000" android:drawingCacheQuality="low" android:animationCache="true" android:alwaysDrawnWithCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/street_dialog_bg" android:layout_width="290.0dip" android:layout_height="310.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0sp" android:textColor="#ff5e5e5e" android:id="@id/street_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29.0dip" android:text="@string/street_sex_selector_title" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/street_sex_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:layout_below="@id/street_dialog_title" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@id/male_layout" android:layout_width="103.0dip" android:layout_height="103.0dip" android:layout_marginRight="36.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sex_male_icon" />
+                <ImageView android:id="@id/male_selector_icon" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/sex_select_icon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textColor="#ff5e5e5e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginTop="15.0dip" android:text="男" android:layout_below="@id/male_layout" />
+            <RelativeLayout android:id="@id/female_layout" android:layout_width="103.0dip" android:layout_height="103.0dip" android:layout_toRightOf="@id/male_layout">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sex_female_icon" />
+                <ImageView android:id="@id/female_selector_icon" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/sex_select_icon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textColor="#ff5e5e5e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginTop="15.0dip" android:text="女" android:layout_toRightOf="@id/male_layout" android:layout_below="@id/female_layout" />
+        </RelativeLayout>
+        <com.xiaoenai.app.widget.wheel.WheelView android:id="@id/street_birth_wheelview" android:background="@drawable/street_dialog_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="152.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/street_dialog_title" />
+        <Button android:enabled="false" android:textColor="@color/white" android:id="@id/street_next_btn" android:background="@drawable/street_dialog_button_bg" android:clickable="false" android:layout_width="107.0dip" android:layout_height="36.0dip" android:layout_marginBottom="30.0dip" android:text="@string/next" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

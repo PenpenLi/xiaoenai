@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/setting_email_modify" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" />
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/setting_layout_marginTop" android:layout_marginRight="15.0dip" android:layout_below="@id/titleBar">
+        <com.xiaoenai.app.widget.CleanableEditText android:textSize="@dimen/input_text_size" android:textColorHint="@color/color_text_grey" android:gravity="center_vertical" android:id="@id/etv_email_or_nickname" android:background="@drawable/bg_input_white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:maxLines="1" android:singleLine="true" android:drawableRight="@drawable/home_ad_delete_btn" android:imeOptions="actionDone" android:imeActionLabel="@string/done" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_text_dark_grey" android:gravity="left" android:id="@id/tv_tip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/setting_email_verified_tips" />
+        <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_save" android:background="@drawable/bg_btn_green" android:layout_width="fill_parent" android:layout_height="@dimen/setting_btn_height" android:layout_marginTop="20.0dip" android:text="@string/save" />
+    </LinearLayout>
+</RelativeLayout>

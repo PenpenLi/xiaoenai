@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/street_scene_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/topbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/mall" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" />
+        <ImageView android:id="@id/imageview_profile" android:paddingLeft="5.0dip" android:paddingTop="13.0dip" android:paddingRight="12.0dip" android:paddingBottom="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/street_profile_icon" android:scaleType="fitCenter" android:layout_alignTop="@id/titleBar" android:layout_alignBottom="@id/titleBar" android:layout_alignParentRight="true" />
+        <com.xiaoenai.app.classes.street.widget.StreetCartButton android:id="@id/view_cart" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/imageview_profile" android:layout_alignTop="@id/titleBar" android:layout_alignBottom="@id/titleBar" />
+    </RelativeLayout>
+    <com.xiaoenai.app.classes.common.widget.NewViewPagerIndicator android:id="@id/viewPager_indicator" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" xiaoenai:indicator_tab_text_size="15.0sp" xiaoenai:indicator_tab_text_paddingLeft="14.0dip" xiaoenai:indicator_tab_text_paddingRight="14.0dip" xiaoenai:indicator_tab_line_height="2.0dip" xiaoenai:indicator_tab_text_color="@color/tab_item_color_selector" xiaoenai:indicator_tab_line_color="@drawable/tab_item_line_bg_pink" />
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.xiaoenai.app.widget.CustomViewPager android:id="@id/street_life_service_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/mall_center_divider_color" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentTop="true" android:contentDescription="@null" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/divider">
+        <ImageView android:id="@id/pay_imageview" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/mall_pay_zhifubao_icon" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/mall_order_confirm_list_item_txt_color" android:gravity="left" android:id="@id/pay_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="@string/mall_order_pay_zhifubao" android:layout_toLeftOf="@id/state_layout" android:layout_toRightOf="@id/pay_imageview" android:layout_alignTop="@id/pay_imageview" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/mall_order_confirm_list_item_subtxt_color" android:gravity="left" android:id="@id/pay_textview_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_order_pay_yinlian_sub" android:layout_toLeftOf="@id/state_layout" android:layout_below="@id/pay_textview" android:layout_alignLeft="@id/pay_textview" />
+        <RelativeLayout android:id="@id/state_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/state_imageview" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/mall_cart_item_checked_circle" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

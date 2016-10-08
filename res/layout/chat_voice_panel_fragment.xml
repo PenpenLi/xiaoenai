@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/stubView" android:background="@drawable/chat_input_bg" android:focusable="false" android:visibility="invisible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/wrapLayout" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/stubView">
+        <RelativeLayout android:id="@id/layoutMain" android:background="@drawable/common_dialog_chat_tip_bg" android:visibility="invisible" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_centerInParent="true">
+            <RelativeLayout android:id="@id/layoutMicrophone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_voice_microphone" android:layout_centerInParent="true" android:contentDescription="@null" />
+                <ImageView android:id="@id/imgAmp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_voice_amp1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+            </RelativeLayout>
+            <ImageView android:id="@id/cancelBtn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_voice_cancel" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/tvHelp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/chat_voice_move_cancel" android:layout_below="@id/layoutMicrophone" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_release_tip" android:background="@drawable/shape_bg_red_dark" android:visibility="gone" android:layout_width="73.0dip" android:layout_height="23.0dip" android:layout_marginTop="4.0dip" android:text="@string/chat_voice_release_cancel" android:layout_below="@id/layoutMicrophone" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/layoutMicrophone" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

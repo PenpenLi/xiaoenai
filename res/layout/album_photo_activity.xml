@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootLayout" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" xiaoenai:titleBarTitle="@string/album_title" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" xiaoenai:leftText="@string/app_name" xiaoenai:rightText="@string/manage" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/manageLayout" android:background="@drawable/preview_buttom_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/album_preview_btn_unable" android:gravity="center" android:id="@id/cancelBtn" android:background="@drawable/album_preview_btn_unable" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/album_delete_btn_text" android:gravity="center" android:id="@id/deleteBtn" android:background="@drawable/album_send_btn_unable" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:text="@string/image_upload" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/manageLayout" android:layout_below="@id/multi_upload_layout" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/emptyLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/empty_layout_icon_bottom_margin" android:src="@drawable/album_photo_empty" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/empty_layout_text_size" android:textColor="@color/empty_text_color" android:gravity="center" android:id="@id/album_empty_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/album_empty_tips" android:lineSpacingExtra="5.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/multi_upload_layout" android:background="@color/album_upload_bg" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/titleBar">
+        <ImageView android:id="@id/multi_upload_cur_image" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@color/space_divider" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/progressLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_toRightOf="@id/multi_upload_cur_image">
+            <TextView android:textSize="15.0sp" android:textColor="#ff4d5359" android:id="@id/multi_upload_tips" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/2" android:layout_centerVertical="true" />
+            <ProgressBar android:id="@id/multi_upload_progress" android:paddingLeft="3.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="3.0dip" android:indeterminate="false" android:progressDrawable="@drawable/album_upload_progress_style" android:layout_below="@id/multi_upload_tips" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/multi_upload_retry_btn" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/album_retry_btn" />
+            <ImageButton android:id="@id/multi_upload_cancel_btn" android:background="@color/transparent" android:paddingLeft="9.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/album_cancle_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.xiaoenai.app.ui.component.view.ProgressView android:id="@id/progressView" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerInParent="true" xiaoenai:ProgressColor="grey" />
+</RelativeLayout>

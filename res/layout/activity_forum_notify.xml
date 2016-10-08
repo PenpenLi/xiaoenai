@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/forum_layout" android:background="?reply_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/message" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" xiaoenai:leftText="@string/notify_name" xiaoenai:rightText="@string/clear" />
+    <com.marshalchen.ultimaterecyclerview.RefreshCustomUltimateRecyclerview android:id="@id/forum_list" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleBar" />
+    <com.xiaoenai.app.ui.component.view.ProgressView android:layout_gravity="center" android:id="@id/progressView" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerInParent="true" xiaoenai:ProgressColor="grey" />
+</RelativeLayout>

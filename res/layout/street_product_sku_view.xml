@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/textview_sku" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/mall_product_tyle" />
+    <View android:background="@color/mall_center_divider_color" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_sku" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+</LinearLayout>

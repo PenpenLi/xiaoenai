@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/setting_listitem_appconfig" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" xiaoenai:leftText="@string/setting_title" />
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_layout_marginTop">
+        <com.xiaoenai.app.widget.ListItemViewEx android:id="@id/SettingAppConfigTheme" android:background="@drawable/widget_list_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:linePosition="topOnly" xiaoenai:titleText="@string/chat_menu_theme" />
+        <com.xiaoenai.app.widget.ListItemViewEx android:id="@id/SettingAppConfigBg" android:background="@drawable/widget_list_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:linePosition="topOnly" xiaoenai:topLineShortDirection="leftOnly" xiaoenai:isTopLineShort="true" xiaoenai:titleText="@string/chat_bg_title" />
+        <ImageView android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="17.0dip" android:contentDescription="@null" />
+        <RelativeLayout android:id="@id/SettingAppConfigAudio" android:background="@drawable/widget_list_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/setting_item_textsize" android:textColor="@color/setting_item_textcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_item_marginLeft" android:text="@string/setting_listitem_audio" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/imageView_sound" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_toggle_off" android:layout_alignParentRight="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <ImageView android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:contentDescription="@null" />
+    </LinearLayout>
+</LinearLayout>

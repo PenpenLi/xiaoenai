@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<listItems>
+    <module_id name="xiaoenai.announcement">
+        <tips name="公告" />
+        <activity name="com.xiaoenai.app.classes.settings.SettingNewsActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.event.browser">
+        <tips name="外置浏览器" />
+        <activity name="" />
+        <action name="android.intent.action.VIEW" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.event.webview">
+        <tips name="内置浏览器" />
+        <activity name="com.xiaoenai.app.classes.common.webview.WebViewActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.feedback">
+        <tips name="意见中心" />
+        <activity name="com.xiaoenai.app.classes.settings.SettingFeedbackActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.feedback.meiqia">
+        <tips name="意见中心,美洽专用" />
+        <activity name="com.xiaoenai.app.feature.feedback.view.activity.FeedbackActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.store">
+        <tips name="表情商店" />
+        <activity name="com.xiaoenai.app.classes.store.StickerActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.forum">
+        <tips name="情侣说提醒" />
+        <activity name="com.xiaoenai.app.classes.forum.ForumNotifyActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_forum_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.bonus">
+        <tips name="奖励" />
+        <activity name="com.xiaoenai.app.classes.extentions.reward.RewardActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.album">
+        <tips name="相册" />
+        <activity name="com.xiaoenai.app.feature.photoalbum.view.activity.PhotoAlbumActivity" />
+        <action name="" />
+        <icon>
+            <type name="loveravatar" />
+            <uri name="" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.todo">
+        <tips name="记事本" />
+        <activity name="com.xiaoenai.app.classes.extentions.todo.TodoActivity" />
+        <action name="" />
+        <icon>
+            <type name="loveravatar" />
+            <uri name="" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.anniversary">
+        <tips name="纪念日" />
+        <activity name="com.xiaoenai.app.classes.extentions.anniversary.AnniversaryActivity" />
+        <action name="" />
+        <icon>
+            <type name="loveravatar" />
+            <uri name="" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.history">
+        <tips name="聊天记录" />
+        <activity name="com.xiaoenai.app.classes.chat.history.ChatHistoryActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.mens">
+        <tips name="小姨妈" />
+        <activity name="com.xiaoenai.app.classes.extentions.menses.MensesActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_menses_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.forum.event">
+        <tips name="情侣说活动详情" />
+        <activity name="com.xiaoenai.app.classes.forum.ForumMomentActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_forum_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.forum.index">
+        <tips name="情侣说首页" />
+        <activity name="com.xiaoenai.app.classes.forum.ForumActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_forum_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.forum.topic">
+        <tips name="情侣说帖子" />
+        <activity name="com.xiaoenai.app.classes.forum.ForumTopicActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_forum_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.street.detail">
+        <tips name="情侣街商品详情页" />
+        <activity name="com.xiaoenai.app.classes.street.StreetProductDetailActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_mall_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.street.delivery">
+        <tips name="情侣街商品物流" />
+        <activity name="com.xiaoenai.app.classes.street.StreetOrderDetailActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_mall_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.street.returngoods">
+        <tips name="情侣街换货" />
+        <activity name="com.xiaoenai.app.classes.street.StreetOrderDetailActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_mall_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.street.aftersalesuccess">
+        <tips name="情侣街售后成功" />
+        <activity name="com.xiaoenai.app.classes.street.StreetOrderDetailActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_mall_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.street.aftersalefail">
+        <tips name="情侣街售后失败" />
+        <activity name="com.xiaoenai.app.classes.street.StreetOrderDetailActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_mall_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.street.feedback">
+        <tips name="情侣街客服反馈" />
+        <activity name="com.xiaoenai.app.classes.street.StreetFeedbackActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_mall_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.home.discover">
+        <tips name="『发现』主页" />
+        <activity name="com.xiaoenai.app.classes.home.HomeActivity" />
+        <action name="discover_to_home" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.lovepet.index">
+        <tips name="爱宠首页" />
+        <activity name="org.cocos2dx.cpp.AppActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.wishtree.index">
+        <tips name="爱情树首页" />
+        <activity name="org.cocos2dx.cpp.AppActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.game.detail">
+        <tips name="游戏详情页" />
+        <activity name="com.xiaoenai.app.classes.gameCenter.GameItemActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.game.index">
+        <tips name="发现页-二人游戏" />
+        <activity name="com.xiaoenai.app.classes.gameCenter.GameCenterActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.life.scene">
+        <tips name="普通场景" />
+        <activity name="com.xiaoenai.app.classes.street.guide.StreetLifeServiceActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.life.activity">
+        <tips name="专场" />
+        <activity name="com.xiaoenai.app.classes.street.guide.StreetLifeServiceActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+
+    <module_id name="xiaoenai.life.special">
+        <tips name="今日特价" />
+        <activity name="com.xiaoenai.app.classes.street.guide.StreetLifeServiceActivity" />
+        <action name="" />
+        <icon>
+            <type name="drawable" />
+            <uri name="notify_official_icon" />
+        </icon>
+    </module_id>
+</listItems>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/forum_layout" android:background="?forum_topic_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:topbar="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" topbar:titleBarTitle="@string/forum_post_detail" topbar:leftDrawable="@drawable/title_bar_icon_back" topbar:leftText="@string/back" topbar:rightDrawable="@drawable/title_bar_icon_point" />
+    <com.xiaoenai.app.widget.PullToRefreshListViewWithFirstItem android:id="@id/forum_topic_list" android:background="?forum_topic_bg" android:divider="@color/transparent" android:layout_above="@id/forum_toolbar_btn_layout" android:layout_below="@id/titleBar" style="@style/forumPullToRefreshListView" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/forum_toolbar_btn_layout" android:background="?forum_topic_toolbar_btn_layout_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/forum_topic_toolbar_share_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/forum_topic_toolbar_share_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?forum_topic_toolbar_share_drawable" />
+            <TextView android:textSize="14.0sp" android:textColor="?forum_topic_toolbar_btn_text_color" android:gravity="center" android:id="@id/forum_topic_toolbar_share_txt" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forum_moment_share_btn" />
+        </LinearLayout>
+        <ImageView android:id="@id/divider1" android:background="?reply_item_btn_divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:contentDescription="@null" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/forum_topic_toolbar_comment_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/forum_topic_toolbar_comment_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?forum_topic_toolbar_comment_drawable" />
+            <TextView android:textSize="14.0sp" android:textColor="?forum_topic_toolbar_btn_text_color" android:gravity="center" android:id="@id/forum_topic_toolbar_comment_txt" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forum_comment" />
+        </LinearLayout>
+        <ImageView android:id="@id/divider2" android:background="?reply_item_btn_divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:contentDescription="@null" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/forum_topic_toolbar_follow_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/forum_topic_toolbar_follow_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?forum_topic_toolbar_follow_selector" />
+            <TextView android:textSize="14.0sp" android:textColor="?forum_topic_toolbar_btn_text_color" android:gravity="center" android:id="@id/forum_topic_toolbar_follow_txt" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forum_follow" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

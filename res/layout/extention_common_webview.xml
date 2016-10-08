@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/non_video_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/topbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" xiaoenai:leftText="@string/back" xiaoenai:rightText="@string/refresh" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/topbar_close_txt" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:text="@string/close" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/topbar_title_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="105.0dip" android:layout_marginRight="105.0dip" android:text="" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/webview_debug_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topbar_layout">
+            <EditText android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/webview_debug_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:textSize="12.0sp" android:id="@id/webview_debug_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="前往" android:layout_weight="0.0" />
+        </LinearLayout>
+        <com.xiaoenai.app.ui.component.view.webview.XeaWebView android:id="@id/extentionCommonWebView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topbar_layout" />
+    </RelativeLayout>
+    <com.xiaoenai.app.ui.component.view.ProgressView android:id="@id/progressView" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" xiaoenai:ProgressColor="grey" />
+    <RelativeLayout android:id="@id/video_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

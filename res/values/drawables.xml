@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="album_pink">#fff45595</item>
+    <item type="drawable" name="album_stub_image">#ffe3e3e3</item>
+    <item type="drawable" name="album_stub_images">#ffe3e3e3</item>
+    <item type="drawable" name="chat_face_tab_bg_press">#ffc3c4c7</item>
+    <item type="drawable" name="chat_message_status_bg">#b3f7f7f7</item>
+    <item type="drawable" name="common_dialog_bg">#e5f8f8f8</item>
+    <item type="drawable" name="common_dialog_xeadialog_bg">#f2f8f8f8</item>
+    <item type="drawable" name="divider_drawable">#40000000</item>
+    <item type="drawable" name="home_mode_item_press">#ff38383c</item>
+    <item type="drawable" name="home_mode_wake_bg">#fff8e0b8</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="repeat_setting_bg">#ffefeff4</item>
+    <item type="drawable" name="screen_background_dark">#ff000000</item>
+    <item type="drawable" name="setting_divider">#ffc8c7cc</item>
+    <item type="drawable" name="settings_bg">#ffefeff4</item>
+    <item type="drawable" name="space_divider">#ffc8c8c8</item>
+    <item type="drawable" name="space_stub_image">#ffefeff4</item>
+    <item type="drawable" name="space_stub_pre_image_color">#ff9f9f9f</item>
+    <item type="drawable" name="topbar_left_btn_bg">#00000000</item>
+    <item type="drawable" name="topbar_right_btn_bg">#00000000</item>
+    <item type="drawable" name="transparent_color">#00000000</item>
+</resources>

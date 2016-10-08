@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <com.xiaoenai.app.widget.TitleBarView android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" xiaoenai:titleBarTitle="@string/street_apply_refund" xiaoenai:leftDrawable="@drawable/title_bar_icon_back" />
+    <RelativeLayout android:id="@id/street_apply_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleBar">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/street_refund_reason_layout" android:background="@drawable/street_customer_service_text_bg" android:paddingLeft="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="20.0dip">
+                <TextView android:textSize="@dimen/mall_customer_service_txt_size" android:textColor="@color/mall_customer_service_tip_color" android:gravity="center_vertical" android:id="@id/street_refund_resone_tip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/street_refund_reason" />
+                <TextView android:textSize="@dimen/mall_customer_service_txt_size" android:textColor="@color/mall_customer_service_text_color" android:gravity="center_vertical" android:id="@id/street_refund_reason_txt" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="@string/street_refund_reason_hint" android:layout_toRightOf="@id/street_refund_resone_tip" />
+                <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/street_refund_reason_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/mall_product_detail_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/street_customer_service_text_bg" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="@dimen/mall_customer_service_txt_size" android:textColor="@color/mall_customer_service_tip_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/street_refund_explain" />
+                <EditText android:textSize="@dimen/mall_customer_service_txt_size" android:textColor="@color/mall_customer_service_text_color" android:textColorHint="@color/mall_customer_service_hint_color" android:gravity="center_vertical" android:id="@id/street_refund_instructions_txt" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:hint="@string/street_refund_explain_hint" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/street_input_img_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <RelativeLayout android:id="@id/street_input_first_img_layout" android:layout_width="96.0dip" android:layout_height="96.0dip">
+                    <ImageButton android:id="@id/street_input_first_img" android:background="@color/transparent" android:layout_width="88.0dip" android:layout_height="88.0dip" android:src="@drawable/mall_upload_add_image_btn" android:scaleType="centerCrop" android:layout_alignParentBottom="true" />
+                    <ImageButton android:id="@id/street_input_first_del_img" android:background="@color/transparent" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/mall_img_del_btn" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/street_input_second_img_layout" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginLeft="4.0dip">
+                    <ImageButton android:id="@id/street_input_second_img" android:background="@color/transparent" android:layout_width="88.0dip" android:layout_height="88.0dip" android:src="@drawable/mall_upload_add_image_btn" android:scaleType="centerCrop" android:layout_alignParentBottom="true" />
+                    <ImageButton android:id="@id/street_input_second_del_img" android:background="@color/transparent" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/mall_img_del_btn" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/street_input_third_img_layout" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginLeft="4.0dip">
+                    <ImageButton android:id="@id/street_input_third_img" android:background="@color/transparent" android:layout_width="88.0dip" android:layout_height="88.0dip" android:src="@drawable/mall_upload_add_image_btn" android:scaleType="centerCrop" android:layout_alignParentBottom="true" />
+                    <ImageButton android:id="@id/street_input_third_del_img" android:background="@color/transparent" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/mall_img_del_btn" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_alignParentBottom="true">
+            <View android:background="#ffcbcaca" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+            <Button android:enabled="false" android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/street_apply_btn" android:background="@drawable/common_dialog_btn_gray" android:layout_width="120.0dip" android:layout_height="36.0dip" android:text="@string/street_submit_apply_btn" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/street_service_msg_layout" android:background="@color/mall_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleBar">
+        <TextView android:textSize="@dimen/mall_service_choose_txt_size" android:textColor="#ff666a6c" android:gravity="center" android:id="@id/street_service_msg_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="80.0dip" android:layout_marginRight="20.0dip" android:text="" android:layout_below="@id/street_service_icon_img" />
+    </LinearLayout>
+</RelativeLayout>

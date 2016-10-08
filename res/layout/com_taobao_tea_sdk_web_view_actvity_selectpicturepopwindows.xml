@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffbfbfbf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/com_taobao_tae_sdk_web_view_activity_selectpicturepopwindow_linearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="18.0sp" android:textStyle="bold" android:id="@id/com_taobao_tae_sdk_web_view_activity_selectpicturepopwindow_album_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="从相册选择" />
+        <Button android:textSize="18.0sp" android:textStyle="bold" android:id="@id/com_taobao_tae_sdk_web_view_activity_selectpicturepopwindow_photograph_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:text="拍照" />
+        <Button android:textSize="18.0sp" android:textStyle="bold" android:id="@id/com_taobao_tae_sdk_web_view_activity_selectpicturepopwindow_cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:text="取消" />
+    </LinearLayout>
+</RelativeLayout>

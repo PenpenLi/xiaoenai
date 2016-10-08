@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/street_scene_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xiaoenai="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0dip" android:textColor="#ff2d2d2d" android:gravity="center" android:id="@id/product_new_count_text" android:background="#ffffc32d" android:padding="11.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.marshalchen.ultimaterecyclerview.RefreshCustomUltimateRecyclerview android:id="@id/product_recyclerview" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.xiaoenai.app.ui.component.view.ProgressView android:id="@id/progressView" android:visibility="visible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerInParent="true" android:layout_centerVertical="true" xiaoenai:ProgressColor="grey" />
+    </RelativeLayout>
+</LinearLayout>

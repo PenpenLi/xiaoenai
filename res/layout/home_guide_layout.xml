@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="250.0dip">
+        <RelativeLayout android:id="@id/layout_guide_camera" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignTop="@id/layoutcamera" android:layout_alignBottom="@id/layoutcamera" android:layout_alignParentRight="true">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                    <ImageView android:gravity="center" android:layout_gravity="center" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_guide_icon" android:scaleType="fitCenter" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layoutcamera" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="bottom|center|left" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:src="@drawable/home_guide_upload_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/layout_top" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/image_couplephoto" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_guide_couplephoto" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="200.0dip" android:layout_above="@id/guide_layout_bottom">
+        <ImageView android:id="@id/image_home" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_guide_home" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/image_discover" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_guide_discover" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <ImageView android:gravity="center" android:id="@id/image_chat" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/home_guide_chat" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/guide_layout_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/guide_layout_bottom" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="5.0">
+            <RelativeLayout android:gravity="center" android:id="@id/layout_guide_home" android:background="@null" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layouthome" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:gravity="center" android:layout_gravity="center" android:background="@null" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_guide_home_icon" android:contentDescription="@null" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+                </LinearLayout>
+                <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/layouthome" android:layout_alignBottom="@id/layouthome" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                        <ImageView android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_guide_icon" android:scaleType="fitCenter" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/layout_guide_discover" android:background="@null" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/layoutdiscover" android:layout_alignBottom="@id/layoutdiscover" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                        <ImageView android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_guide_icon" android:scaleType="fitCenter" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutdiscover" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                    <ImageView android:gravity="center" android:layout_gravity="center" android:background="@null" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_guide_discover_icon" android:contentDescription="@null" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_discover" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/layout_guide_chat" android:background="@null" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/layoutchat" android:layout_alignBottom="@id/layoutchat" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                        <ImageView android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_guide_icon" android:scaleType="fitCenter" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutchat" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:gravity="center" android:layout_gravity="center" android:background="@null" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_guide_chat_icon" android:contentDescription="@null" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_chat" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_guide_notify" android:background="@null" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:gravity="center" android:layout_gravity="center" android:background="@null" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_tab_notification" android:contentDescription="@null" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notify_name" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_guide_mine" android:background="@null" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:gravity="center" android:layout_gravity="center" android:background="@null" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_guide_mine_icon" android:contentDescription="@null" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_setting_mine" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#88000000" android:drawingCacheQuality="low" android:animationCache="true" android:alwaysDrawnWithCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="@drawable/tipdialog_background" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="25.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tip_dialog_layout" android:layout_width="260.0dip" android:layout_height="wrap_content">
+            <com.xiaoenai.app.ui.component.view.AvatarView android:layout_gravity="center" android:id="@id/dialogAvatar" android:visibility="gone" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/avatar_default" android:scaleType="centerCrop" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:autoLink="none" android:layout_gravity="center_horizontal" android:id="@id/message_name" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="10.0dip" android:maxHeight="320.0dip" android:text="sdjifxiaoennn" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:autoLink="none" android:layout_gravity="center_horizontal" android:id="@id/messageText" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="320.0dip" />
+        </LinearLayout>
+        <View android:id="@id/divider" android:background="#ffbfbebe" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/btnContainer" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="17.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/buttonLeft" android:background="@drawable/tipdialog_left_btn_bg" android:visibility="gone" android:layout_width="77.0dip" android:layout_height="50.0dip" android:text="@string/close" android:layout_weight="1.0" />
+            <View android:id="@id/divider_vertival" android:background="#ffbfbebe" android:visibility="gone" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <Button android:textSize="17.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/buttonRight" android:background="@drawable/tipdialog_one_btn_bg" android:layout_width="77.0dip" android:layout_height="50.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
